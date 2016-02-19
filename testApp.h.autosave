@@ -1,0 +1,26 @@
+#ifndef TESTAPP_H
+#define TESTAPP_H
+
+
+#pragma once
+#include "ofMain.h"
+#include "ofxOpenCv.h"
+class testApp : public ofBaseApp
+{
+public:
+    void setup();
+    void update();
+    void draw();
+    ofVideoGrabber vid;
+    ofxCvColorImage color;
+    ofxCvGrayscaleImage gr;
+    int h,w,times,timesb,tim;
+    double ges;
+    bool mode,stop;
+    double the;
+    unsigned char * pix;
+    ofSerial serial;
+};
+
+
+#endif // TESTAPP_H
